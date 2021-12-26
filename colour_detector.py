@@ -26,6 +26,13 @@ Negatives
 - Not enough OOP, but can easily change that :) 
 '''
 
+#TODO: 1. Start making clear variable names 
+#TODO: 2. Find a way to show the colours via a single click instead of a double click 
+#TODO: 3. Find a way to display the hexcode on the image output 
+#TODO: 4. Find a way to display a help message saying 'press esc to leave the image' 
+#TODO: 5. Refactor the code into a class using OOP 
+
+
 #Creating argument parser to take image path from command line
 ap = argparse.ArgumentParser()
 ap.add_argument('-i', '--image', required=True, help="Image Path")
@@ -92,4 +99,4 @@ while(1):
     if cv2.waitKey(20) & 0xFF ==27:
         break
     
-cv2.destroyAllWindows()
+cv2.destroyAllWindows()i
